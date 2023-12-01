@@ -1,0 +1,164 @@
+.ExamScreen {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ded9f7;
+}
+
+.LevelScreen__StickyNavbar {
+  position: sticky;
+  top: 0;
+  background-color: #ded9f7;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+.LevelScreen__StickyNavbar .BraneLogo img {
+  width: 12vw;
+}
+.LevelScreen__StickyNavbar__profile img {
+  width: 4vw;
+  height: 8vh;
+  border-radius: 2rem;
+}
+
+.mainscreen {
+  background-color: #ded9f7;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  padding: 2rem;
+}
+.mainscreen__container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 75vw;
+  background-color: azure;
+  border-radius: 0.5rem;
+}
+.mainscreen__container__Assessment_Header1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.mainscreen__insidescreen {
+  display: flex;
+  padding: 1rem;
+}
+.mainscreen__insidescreen__text {
+  padding: 0.5rem 1rem;
+}
+.mainscreen__insidescreen__text__heading {
+  color: rgb(154, 98, 207);
+  font-size: 1.5rem;
+}
+.mainscreen__insidescreen__text__heading h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.mainscreen__insidescreen__text__paragraph {
+  font-size: 1.3rem;
+}
+.mainscreen__insidescreen__text__paragraph p {
+  margin: 0;
+  font-size: 0.875rem;
+  text-align: justify;
+}
+.mainscreen__insidescreen__text__buttons {
+  display: grid;
+  grid-template-columns: 120px 120px;
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: center;
+}
+.mainscreen__insidescreen__text__buttons__btn {
+  background-color: #ded9f7;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border-style: none;
+  position: relative;
+}
+.mainscreen__insidescreen__text__buttons__btn img {
+  height: 2rem;
+  position: absolute;
+  margin-top: -1.5rem;
+  right: -7px;
+}
+.mainscreen__insidescreen__text__buttons__btn:hover {
+  transform: scale(1.05);
+  background-color: #d0c8f7;
+}
+.mainscreen__insidescreen__text__buttons__btn:disabled {
+  color: black;
+  background-color: #dad7e9;
+}
+.mainscreen__insidescreen__image img {
+  height: 23rem;
+  width: 28rem;
+}
+
+.Instructions__AssessmentScreen {
+  padding: 1rem 0;
+  background-color: #f5f3fe;
+  height: 82vh;
+}
+.Instructions__Container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  max-height: auto;
+  min-height: 70vh;
+  padding: 0.5rem;
+  box-shadow: 0px 1px 24px 2px #e9e6e6;
+}
+.Instructions__Container__InstructionsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Instructions__Container__InstructionsBox__InstructionsTitle {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+.Instructions__Container__InstructionsBox__InstructionsTitle__icon {
+  cursor: pointer;
+}
+.Instructions__Container__InstructionsBox__InstructionsTitle__icon img {
+  height: 5vh;
+  width: 2.8vw;
+  cursor: pointer;
+}
+.Instructions__Container__InstructionsBox__InstructionPoints ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.Instructions__Container__InstructionsBox__InstructionPoints ol li {
+  padding: 0.1rem 0;
+  background: none;
+}
+.Instructions__Container__StartButton {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 1rem 0;
+}
+.Instructions__Container__StartButton_btn {
+  background-color: #5655bd;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.Instructions__Container__StartButton_btn:hover {
+  transform: scale(1.05);
+  background-color: #5856e3;
+}/*# sourceMappingURL=PracticeExamscreen.css.map */

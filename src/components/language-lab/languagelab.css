@@ -1,0 +1,13 @@
+.languagelab {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  height: 100%;
+  width: 100%;
+}

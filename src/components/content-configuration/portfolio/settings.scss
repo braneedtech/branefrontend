@@ -1,0 +1,67 @@
+.landingpage__rightbox {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Center the entire content vertically
+    text-align: center; // Center text and form elements
+    
+    &__title {
+      padding-top:.5rem;
+      color: #4130ae;
+      justify-content: center;
+    }
+  
+    &__personaldata {
+     margin-top: 1rem;
+      width: 100%;
+      max-width: 52rem; // Adjust the max width as needed
+      
+      input {
+        // height:2.25rem;
+        // margin-left: 1rem;
+        // margin-bottom: 1rem;
+        // width: 100%;
+        padding: .5rem 1rem;
+         box-sizing: border-box;
+        // padding: 0.35rem 0 0 1rem;
+        font-size: 0.845rem;
+        border: none;
+        outline: none;
+        background-color: rgba(240, 237, 255, 0.8);
+        border-radius: .5rem;
+      }
+  
+      button {
+
+        border-radius: .5rem;
+        background-color: #4130ae;
+        color: #ffffff;
+        margin-top: 1rem;
+        padding: .5rem 1rem;
+        border: none;
+      }
+  
+      form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1rem;
+  
+        label {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1rem;
+
+  
+          span {
+            padding-left: 0.5rem;
+            width: 50%;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  

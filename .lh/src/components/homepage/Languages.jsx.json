@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/homepage/Languages.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1700652520283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700652527248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;\r\n const shuffle = (arr) => [...arr].sort( () => .5 - Math.random() );\r\n \r\n-const InfiniteLoopSlider = ({ children, duration, reverse = false }) => {\r\n+const InfiniteLoopSlider = ({ children, duration, reverse = true }) => {\r\n   return (\r\n     <div className={styles.loopSlider} style={{\r\n         '--duration': `${duration}ms`,\r\n         '--direction': reverse ? 'reverse' : 'normal'\r\n"
+                },
+                {
+                    "date": 1700652548716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,13 @@\n \r\n const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;\r\n const shuffle = (arr) => [...arr].sort( () => .5 - Math.random() );\r\n \r\n-const InfiniteLoopSlider = ({ children, duration, reverse = true }) => {\r\n+const InfiniteLoopSlider = ({ children, duration, reverse = false }) => {\r\n   return (\r\n     <div className={styles.loopSlider} style={{\r\n         '--duration': `${duration}ms`,\r\n-        '--direction': reverse ? 'reverse' : 'normal'\r\n+        '--direction': 'reverse' \r\n       }}>\r\n       <div className={styles.inner}>\r\n         {children}\r\n         {children}\r\n"
+                }
+            ],
+            "date": 1700652520283,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport ReactDOM from 'react-dom';\r\nimport styles from './Languages.module.css'; // Importing the CSS module\r\n\r\nconst COLORS = ['#bbf7d0', '#99f6e4', '#bfdbfe', '#ddd6fe', '#f5d0fe', '#fed7aa', '#fee2e2'];\r\nconst TAGS = ['English', 'తెలుగు', 'हिन्दी', 'मराठी', 'ಕನ್ನಡ', 'தமிழ்', 'ગુજરાતી','বাংলা', 'অসমীয়া', 'മലയാളം', 'ਪੰਜਾਬੀ','ଓଡ଼ିଆ'];\r\nconst DURATION = 20000;\r\nconst ROWS = 1;\r\nconst TAGS_PER_ROW = 18;\r\n\r\nconst random = (min, max) => Math.floor(Math.random() * (max - min)) + min;\r\nconst shuffle = (arr) => [...arr].sort( () => .5 - Math.random() );\r\n\r\nconst InfiniteLoopSlider = ({ children, duration, reverse = false }) => {\r\n  return (\r\n    <div className={styles.loopSlider} style={{\r\n        '--duration': `${duration}ms`,\r\n        '--direction': reverse ? 'reverse' : 'normal'\r\n      }}>\r\n      <div className={styles.inner}>\r\n        {children}\r\n        {children}\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nconst Tag = ({ text }) => (\r\n  <div className={styles.tag}><span></span> {text}</div>\r\n);\r\n\r\nconst Languages = () => (\r\n  <div className={styles.languages}>\r\n    <header>\r\n      <h1>Languages Supported</h1>\r\n      {/* <p>We Support multiple languages</p> */}\r\n    </header>\r\n    <div className={styles.tagList}>\r\n      {[...new Array(ROWS)].map((_, i) => (\r\n        <InfiniteLoopSlider key={i} duration={random(DURATION - 5000, DURATION + 5000)} reverse={i % 2}>\r\n          {shuffle(TAGS).slice(0, TAGS_PER_ROW).map(tag => (\r\n            <Tag text={tag} key={tag} />\r\n          ))}\r\n        </InfiniteLoopSlider>\r\n      ))}\r\n      <div className={styles.fade}/>\r\n    </div>\r\n  </div>\r\n);\r\n\r\n// ReactDOM.render(\r\n//   <Languages />,\r\n//   document.getElementById('root')\r\n// );\r\n\r\nexport default Languages;\r\n"
+        }
+    ]
+}

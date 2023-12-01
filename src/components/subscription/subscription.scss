@@ -1,0 +1,129 @@
+.subscription {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #35008b;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        &__logo {
+            img {
+                width: 19rem;
+                padding: 1rem;
+            }
+        }
+
+        &__heading {
+            text-align: center;
+
+            div {
+                font-size: 3vw;
+                color: #fff;
+
+            }
+        }
+
+        // &__parentdetails {}
+
+        &__content {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            gap: 1vw;
+            padding: 2.5vw 0 1vw 0;
+            justify-content: center;
+
+            &__card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex: 1;
+                border-radius: 1vw;
+                padding: .5vw 0;
+
+                background-color: white;
+                gap: 1vh;
+
+                &__text {
+                    ul {
+                        li {
+                            font-weight: 600;
+                            font-size: 1.25vmax;
+
+                            ul {
+                                li {
+                                    font-weight: 500;
+                                    font-size: 1.1vmax;
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &__title {
+                    font-size: 2vw;
+                    font-weight: 500;
+                }
+
+                &__price {
+                    font-size: 3vw;
+                }
+
+                &__buy-btn {
+                    padding: .5vw 0;
+
+                    .subscribe-btn {
+                        border: none;
+                        padding: .5vw 1.25vw;
+                        background-color: #35008b;
+                        color: white;
+                        border-radius: .75vw;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    .google-pay-button-container {
+                        button {
+                            background-color: #35008b;
+                            border-radius: .75vw;
+                            &:hover{
+                                background-color: #35008b;
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+                }
+            }
+
+            // & .card1{
+            //     background-color: #FFD859;
+            // }
+            // & .card2{
+            //     background-color: #A9D46F;
+            // }
+            // & .card3{
+            //     background-color: #F4663E;
+            // }
+        }
+    }
+}
+
+.gpay-card-info-container.black,
+.gpay-card-info-animation-container.black {
+    background-color: #35008b;
+
+    &:hover {
+        background-color: #35008b;
+    }
+}
+
+.gpay-card-info-animation-container .black .gpay-card-info-animation-container-fade-out .hover {
+    background-color: #35008b;
+    transform: scale(1.05);
+}

@@ -1,0 +1,25 @@
+.dynamictimetable {
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1rem;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 60%;
+        }
+        &__text{
+            font-size: 2vw;
+            font-weight: 700;
+            color: #35008B;
+        }
+
+    }
+
+}

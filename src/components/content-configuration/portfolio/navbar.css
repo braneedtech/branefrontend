@@ -1,0 +1,49 @@
+.landing__rightbox__navbar {
+  background-color: #603E9F;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.25rem;
+  width: 100%;
+}
+.landing__rightbox__navbar__left {
+  display: flex;
+  font-size: 0.85rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-weight: 500;
+}
+.landing__rightbox__navbar__left span {
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 400;
+}
+.landing__rightbox__navbar__left span img {
+  width: 1.3rem;
+  margin-right: 0.6rem;
+}
+.landing__rightbox__navbar__right {
+  display: flex;
+  gap: 1.1rem;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-weight: 500;
+}
+.landing__rightbox__navbar__right img {
+  cursor: pointer;
+}
+.landing__rightbox__navbar__right__searchbox {
+  background: #e2d8fd;
+  border-radius: 0.9rem;
+  border-color: #e2d8fd;
+  outline: none;
+  padding: 1rem;
+  width: 15rem;
+  height: 2rem;
+  border: 1px solid #e2d8fd;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=Navbar.css.map */

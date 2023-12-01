@@ -1,0 +1,27 @@
+.learningnetwork {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.learningnetwork__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.learningnetwork__container img {
+  width: 35%;
+}
+.learningnetwork__container__text {
+  font-size: 2vw;
+  font-weight: 700;
+  color: #35008B;
+}/*# sourceMappingURL=learningnw.css.map */

@@ -1,0 +1,20 @@
+.landing__leftbox__logout{
+  display: flex;
+  gap: .75rem;
+  cursor: pointer;
+}
+.landing__leftbox__logout img{
+  width: 1.3rem;
+}
+
+.landing__leftbox__logout img:hover{
+  color: #673ab7;
+}
+  
+.landing__leftbox__logout div{
+  font-size: 1rem;
+}
+
+.landing__leftbox__logout div:hover{
+  color: #673ab7;
+}

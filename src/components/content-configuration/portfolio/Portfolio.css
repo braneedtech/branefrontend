@@ -1,0 +1,566 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.landing {
+  background-color: rgb(219, 219, 247);
+  width: 100%;
+  padding: 1.25rem 1rem 0.5rem;
+  display: flex;
+  gap: 1rem;
+  height: 100vh;
+}
+.landing__leftbox {
+  width: 20%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  border-radius: 0.9rem;
+}
+.landing__leftbox__portfolio__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing__leftbox__portfolio__profile__branelogo {
+  width: 9rem;
+  cursor: pointer;
+}
+.landing__leftbox__portfolio__profile__userimage {
+  width: 4rem;
+  margin: 0.4rem;
+  border-radius: 50%;
+  height: 10vh;
+}
+.landing__leftbox__portfolio__profile__initials {
+  width: 4rem;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: #7E58C7;
+  border-radius: 50%;
+  color: white;
+}
+.landing__leftbox__portfolio__profile__username {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.landing__leftbox__portfolio__profile__userclass {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #A5B4CB;
+}
+.landing__leftbox__portfolio__profile__line {
+  width: 115%;
+  border-bottom: 1.3px solid #DFE5F1;
+  margin: 0.4rem;
+}
+.landing__leftbox__accordionsection {
+  background-color: white;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  height: calc(100vh - 162px - 100px);
+  width: 18.8vw;
+  margin-left: -1rem;
+}
+.landing__leftbox__accordionsection .accordion {
+  --bs-accordion-border-color: none;
+  --bs-accordion-active-bg: #F5F3FE;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-inner-border-radius: none;
+}
+.landing__leftbox__accordionsection::-webkit-scrollbar {
+  width: 5px;
+}
+.landing__leftbox__accordionsection::-webkit-scrollbar-track {
+  background: #e8e6f1;
+  border-radius: 5px;
+}
+.landing__leftbox__accordionsection::-webkit-scrollbar-thumb {
+  background: #35008b;
+  border-radius: 5px;
+}
+.landing__leftbox__accordionsection::-webkit-scrollbar-thumb:hover {
+  background: #35008b;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-collapse .accordion-body {
+  padding: 0 0 0 1.25rem;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-collapse .accordion-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-collapse .accordion-body ul li {
+  padding: 0.5rem 0 0.3rem 2.1rem;
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.26);
+  font-size: 0.875rem;
+  color: #3B3B3B;
+  font-weight: 500;
+  text-decoration: none;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-collapse .accordion-body ul li:hover {
+  color: #673ab7;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-collapse .accordion-body ul li sup {
+  background: #43ba23;
+  padding: 0.5px 4px;
+  color: white;
+  margin-left: 1px;
+  border-radius: 50%;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-header button {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #141736;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-header :not(.collapsed) {
+  background-color: #f5f3fe;
+  box-shadow: 0 0 0 white;
+  color: #603e9f;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  position: relative;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-header :not(.collapsed)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #603E9F;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-header .accordion-button {
+  height: 2.5rem;
+  font-size: 0.9rem;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-header .accordion-button :focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: white;
+}
+.landing__leftbox__accordionsection .accordion-item .accordion-header .accordion-button img {
+  width: 1.3rem;
+  margin-right: 0.8rem;
+  background: none;
+}
+.landing__leftbox__logout {
+  display: flex;
+  gap: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.landing__leftbox__logout :hover {
+  color: #673ab7;
+}
+.landing__leftbox__logout img {
+  width: 1.3rem;
+}
+.landing__leftbox__logout div {
+  font-size: 1rem;
+}
+.landing__rightbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.landing__rightbox__navbar {
+  background-color: #5d33a2;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.25rem;
+  width: 100%;
+}
+.landing__rightbox__navbar__left {
+  display: flex;
+  font-size: 0.85rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-weight: 500;
+  align-content: center;
+}
+.landing__rightbox__navbar__left a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.landing__rightbox__navbar__left a:hover {
+  color: #ffffff;
+}
+.landing__rightbox__navbar__left a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.landing__rightbox__navbar__left a:hover:after {
+  width: 100%;
+  left: 0rem;
+}
+.landing__rightbox__navbar__left span {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.landing__rightbox__navbar__left span img {
+  width: 1.3rem;
+  margin-right: 0.3125rem;
+}
+.landing__rightbox__navbar__left span:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  animation: navbarHover 0.3s ease-in-out forwards;
+}
+.landing__rightbox__navbar__right {
+  display: flex;
+  gap: 1.1rem;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-weight: 500;
+}
+.landing__rightbox__navbar__right img {
+  cursor: pointer;
+}
+.landing__rightbox__navbar__right__searchbox {
+  background: #e2d8fd;
+  border-radius: 0.9rem;
+  border-color: #e2d8fd;
+  outline: none;
+  padding: 1rem;
+  width: 15rem;
+  height: 2rem;
+  border: 1px solid #e2d8fd;
+  font-size: 0.9rem;
+}
+@keyframes navbarHover {
+  0% {
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+.landing__rightbox__content {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  min-height: 84vh;
+  max-height: 84vh;
+  overflow-y: auto;
+  /* Custom CSS for accordion */
+}
+.landing__rightbox__content--breadcrum {
+  font-size: 1.1vw;
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+.landing__rightbox__content .Accordionitem {
+  width: 90%;
+  margin-left: 2rem;
+}
+.landing__rightbox__content .accordion {
+  --bs-accordion-btn-icon: u rl("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z' fill='%23000000'%3E%3C/path%3E%3C/svg%3E");
+  --bs-accordion-btn-active-icon: u rl("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 8H4V7H11V8Z' fill='%2335008b'%3E%3C/path%3E%3C/svg%3E");
+  --bs-accordion-btn-icon-width: 1.7rem;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-border-color: none;
+}
+.landing__rightbox__content .accordion-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+.landing__rightbox__content .accordion-button:not(.collapsed) {
+  color: #35008B;
+}
+.landing__rightbox__content .accordion-button {
+  letter-spacing: 0px;
+  color: #170F49;
+  letter-spacing: 0rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.landing__rightbox__content .accordion-body {
+  padding: 0px;
+}
+.landing__rightbox__content::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 5px;
+}
+.landing__rightbox__content::-webkit-scrollbar-track {
+  background: #e8e6f1;
+  border-radius: 5px;
+}
+.landing__rightbox__content::-webkit-scrollbar-thumb {
+  background: #35008b;
+  border-radius: 5px;
+}
+.landing__rightbox__content::-webkit-scrollbar-thumb:hover {
+  background: #35008b;
+}
+.landing__rightbox__content__topcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.landing__rightbox__content__topcontent__greeting {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.landing__rightbox__content__topcontent__greeting img {
+  height: 10vh;
+}
+.landing__rightbox__content__topcontent__greeting__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.landing__rightbox__content__topcontent__greeting__text_1 {
+  font-size: 2vw;
+  font-weight: 500;
+  text-align: center;
+}
+.landing__rightbox__content__topcontent__greeting__text_2 {
+  font-size: 2vw;
+  font-weight: 500;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+.landing__rightbox__content__topcontent__greeting:hover {
+  box-shadow: 0px 0px 16px rgb(203, 147, 255);
+}
+.landing__rightbox__content__topcontent__quote {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  position: relative;
+}
+.landing__rightbox__content__topcontent__quote__text1 {
+  text-align: center;
+  font-size: 1.3vw;
+}
+.landing__rightbox__content__topcontent__quote__text4 {
+  text-align: right;
+  font-size: 0.7rem;
+}
+.landing__rightbox__content__topcontent__quote__icon {
+  position: absolute;
+  right: 1vw;
+  top: 0.5vh;
+  z-index: 99;
+  cursor: pointer;
+}
+.landing__rightbox__content__topcontent__quote__icon img {
+  height: 4vh;
+  width: 2.5vw;
+  cursor: pointer;
+}
+.landing__rightbox__content__topcontent__quote:hover {
+  box-shadow: 0px 0px 16px rgb(203, 147, 255);
+}
+.landing__rightbox__content__topcontent__right {
+  padding: 0.5rem;
+  max-height: 20vh;
+  border-radius: 0.9rem;
+  background-color: red;
+}
+.landing__rightbox__content__bottomcontent__video {
+  width: 73vw;
+}
+.landing__rightbox__content__bottomcontent__video__video {
+  text-align: center;
+}
+.landing__rightbox__content__bottomcontent__video p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.landing__rightbox__content__bottomcontent__video video {
+  border-radius: 7px;
+}
+.landing__rightbox__content__bottomcontent__video .landing__rightbox__content__bottomcontent__video .slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing__rightbox__content__bottomcontent__video .slick-initialized .slick-slide {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.2);
+  height: 50vh;
+}
+.landing__rightbox__content__bottomcontent__video .slick-prev {
+  left: 5rem;
+  top: 7.8125rem;
+  z-index: 10;
+  transform: rotate(270deg);
+}
+.landing__rightbox__content__bottomcontent__video .slick-prev::before {
+  font-size: 0;
+}
+.landing__rightbox__content__bottomcontent__video .slick-prev :hover {
+  filter: drop-shadow(2px 4px 6px rgb(198, 198, 255));
+}
+.landing__rightbox__content__bottomcontent__video .slick-next {
+  left: 52rem;
+  top: 7.8125rem;
+  transform: rotate(90deg);
+  z-index: 15;
+}
+.landing__rightbox__content__bottomcontent__video .slick-next::before {
+  font-size: 0;
+}
+.landing__rightbox__content__topicslist {
+  list-style: none;
+  max-height: 25vh;
+  overflow-y: scroll;
+}
+.landing__rightbox__content__topicslist .arrowicon {
+  width: 2rem;
+  height: 2rem;
+  filter: drop-shadow(0px 4px 8px #c3c3c3);
+  left: 55.5vw;
+  position: sticky;
+}
+.landing__rightbox__content__topicslist::-webkit-scrollbar {
+  width: 5px;
+}
+.landing__rightbox__content__topicslist::-webkit-scrollbar-track {
+  background: #e8e6f1;
+  border-radius: 5px;
+}
+.landing__rightbox__content__topicslist::-webkit-scrollbar-thumb {
+  background: #35008b;
+  border-radius: 5px;
+}
+.landing__rightbox__content__topicslist::-webkit-scrollbar-thumb:hover {
+  background: #35008b;
+}
+.landing__rightbox__content__topicslist li {
+  margin: 0.5rem 0.75rem 1rem 0;
+  padding: 1rem 0.75rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 2px 6px 25px -17px #080F34;
+  font-size: 0.845rem;
+}
+.landing__rightbox__content__topicslist li a {
+  font-size: 0.845rem;
+  text-decoration: none;
+  color: black;
+}
+.landing__mycertificates {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.landing__mycertificates__NotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.landing__mycertificates__list {
+  padding: 1rem 0.75rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: -6px 11px 30px -18px #080F34;
+  font-size: 0.845rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing__mycertificates__list__icons {
+  display: flex;
+  gap: 1rem;
+}
+.landing__mycertificates__list__icons button {
+  background-color: rgb(164, 164, 227);
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: none;
+}
+.landing__subscription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.landing__subscriptiondetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  border: 1px solid black;
+  padding: 1vw;
+  width: 70%;
+  border-radius: 0.5vw;
+}
+.landing__subscriptiondetails__content {
+  display: flex;
+}
+.landing__subscriptiondetails__content-title {
+  width: 50%;
+}
+.landing__subscriptiondetails__content-value {
+  width: 40%;
+}
+.landing__subscriptiondetails__button {
+  display: flex;
+  justify-content: flex-end;
+}
+.landing__subscriptiondetails__button button {
+  text-transform: none;
+  border: none;
+  background-color: #603E9F;
+  padding: 0.5rem 1rem;
+  font-size: 1.1vw;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.landing__subscriptiondetails__button button:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=Portfolio.css.map */

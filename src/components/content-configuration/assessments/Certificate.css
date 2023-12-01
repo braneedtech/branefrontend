@@ -1,0 +1,55 @@
+.certificate {
+  margin-left: 20rem;
+
+  text-align: center;
+
+  width: 75%;
+
+  padding: 2rem;
+
+  margin-top: .5rem;
+
+  margin-left: 10rem;
+
+  background-image: url("../../../assets/certificate.png");
+
+  background-size: 60rem;
+
+  height: 28.75rem;
+
+  background-repeat: no-repeat;
+}
+
+.certificate p{
+  margin: 0;
+}
+
+.name {
+  font-style: italic;
+
+  font-weight: 500;
+
+  color: #daa520;
+}
+
+.signature {
+  margin-left: 23rem;
+
+  font-weight: 300;
+
+  font-style: oblique;
+
+  /* margin-top: 6cqh; */
+}
+
+.signature{
+  text-align: right;
+}
+
+.signature h4 {
+  /* margin-top: -6rem;
+
+  margin-left: 2rem; */
+  font-size: 1.25rem;
+}
+

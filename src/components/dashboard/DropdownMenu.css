@@ -1,0 +1,53 @@
+/* DropdownMenu.css */
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  width: 10%;
+}
+
+.submenu-item {
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.submenu-item:hover,
+.menu-item:hover {
+  background-color: #e6e6e6;
+}
+
+.selected {
+  background-color: #b3daff; /* Change the color for the selected item */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.menu-item:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu-item:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  left: 100%;
+  top: 0;
+  margin-left: -1px;
+}

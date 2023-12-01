@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/components/content-configuration/portfolio/AccordionData.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1700821367170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700822122525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Accordion from 'react-bootstrap/Accordion';\r\n import { Link } from 'react-router-dom';\r\n import StudentDetailsCustomHook from '../../context-api/StudentDetailsCustomHook';\r\n \r\n-const AccordionData = ({ portfolio_data, certificate_count }) => {\r\n+const AccordionData = ({ portfolio_data, certificate_count, activeKey, setActiveKey }) => {\r\n   const { student } = StudentDetailsCustomHook();\r\n \r\n   return (\r\n     <>\r\n"
+                },
+                {
+                    "date": 1700822137163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const { student } = StudentDetailsCustomHook();\r\n \r\n   return (\r\n     <>\r\n-      <Accordion>\r\n+      <Accordion activeKey={activeKey} onSelect={(key) => setActiveKey(key)}>\r\n         {portfolio_data &&\r\n           portfolio_data.map((element, index) => (\r\n             <Accordion.Item eventKey={index} key={index}>\r\n               <Accordion.Header>\r\n"
+                },
+                {
+                    "date": 1700823146925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n \r\n   return (\r\n     <>\r\n       <Accordion activeKey={activeKey} onSelect={(key) => setActiveKey(key)}>\r\n+      {console.log(`Current Active Key: ${activeKey}`)}\r\n         {portfolio_data &&\r\n           portfolio_data.map((element, index) => (\r\n             <Accordion.Item eventKey={index} key={index}>\r\n               <Accordion.Header>\r\n"
+                },
+                {
+                    "date": 1700823496427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n       <Accordion activeKey={activeKey} onSelect={(key) => setActiveKey(key)}>\r\n       {console.log(`Current Active Key: ${activeKey}`)}\r\n         {portfolio_data &&\r\n           portfolio_data.map((element, index) => (\r\n-            <Accordion.Item eventKey={index} key={index}>\r\n+            <Accordion.Item eventKey={String(index)} key={index}>\r\n               <Accordion.Header>\r\n                 <img src={element.icon} alt={element.title} />\r\n                 {element.title}\r\n               </Accordion.Header>\r\n"
+                },
+                {
+                    "date": 1700831175312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,11 @@\n \r\n     return `/portfolio/personalinfo`;\r\n \r\n   }\r\n+  else if(section === \"Language Lab\"){\r\n+    return `/portfolio/language-lab`\r\n+  }\r\n \r\n   else if (section === \"My Account\" && item === \"Profile Information\") {\r\n \r\n     return `/portfolio/profileinfo`;\r\n"
+                }
+            ],
+            "date": 1700821367170,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport Accordion from 'react-bootstrap/Accordion';\r\nimport { Link } from 'react-router-dom';\r\nimport StudentDetailsCustomHook from '../../context-api/StudentDetailsCustomHook';\r\n\r\nconst AccordionData = ({ portfolio_data, certificate_count }) => {\r\n  const { student } = StudentDetailsCustomHook();\r\n\r\n  return (\r\n    <>\r\n      <Accordion>\r\n        {portfolio_data &&\r\n          portfolio_data.map((element, index) => (\r\n            <Accordion.Item eventKey={index} key={index}>\r\n              <Accordion.Header>\r\n                <img src={element.icon} alt={element.title} />\r\n                {element.title}\r\n              </Accordion.Header>\r\n              <Accordion.Body>\r\n                <ul>\r\n                  {element &&\r\n                    element?.content &&\r\n                    element.content.map((ele, ind) => (\r\n                      <Link\r\n                        to={getLinkPath(element.title, ele)}\r\n                        key={ind}\r\n                        style={{ textDecoration: 'none', color: 'inherit' }}\r\n                      >\r\n                        {\r\n                          ele === \"My Certificates\" ?\r\n                            <li>\r\n                              {ele}\r\n                              <sup>\r\n                                {\r\n                                  certificate_count\r\n                                }\r\n                              </sup>\r\n                            </li> :\r\n                            <li>{ele}</li>\r\n                        }\r\n                      </Link>\r\n                    ))}\r\n                </ul>\r\n              </Accordion.Body>\r\n            </Accordion.Item>\r\n          ))}\r\n      </Accordion>\r\n    </>\r\n  );\r\n};\r\n\r\nconst getLinkPath = (section, item) => {\r\n  // Customize this function to generate the correct route based on the section and item\r\n  if (section === 'Academics') {\r\n    return `/portfolio/chapters/${item}`;\r\n  } else if (section === 'Sports') {\r\n    return `/portfolio/sports/${item}`;\r\n  } else if (section === 'Special Skills') {\r\n    return `/portfolio/specialskills/${item}`;\r\n  }\r\n  else if (section === 'Health & Wellness') {\r\n    return `/portfolio/health/${item}`\r\n  }\r\n  else if (section === 'Life Skills') {\r\n    return `/portfolio/lifeskills/${item}`\r\n  }\r\n  else if (section === 'My Account' && item === 'My Certificates') {\r\n    return `/portfolio/myaccount`;\r\n  }\r\n  else if (section === \"My Account\" && item === \"Personal Information\") {\r\n\r\n    return `/portfolio/personalinfo`;\r\n\r\n  }\r\n\r\n  else if (section === \"My Account\" && item === \"Profile Information\") {\r\n\r\n    return `/portfolio/profileinfo`;\r\n\r\n  } else {\r\n    // Add more conditions if needed\r\n    return '';\r\n  }\r\n};\r\n\r\nexport default AccordionData;\r\n"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+.learningnetwork {
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    &__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 35%;
+        }
+        &__text{
+            font-size: 2vw;
+            font-weight: 700;
+            color: #35008B;
+        }
+
+    }
+
+}

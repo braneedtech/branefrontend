@@ -1,0 +1,208 @@
+.ExamScreen {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ded9f7;
+
+}
+
+.LevelScreen__StickyNavbar {
+    position: sticky;
+    top: 0;
+    background-color: #ded9f7;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+
+    & .BraneLogo {
+        img {
+            width: 12vw;
+        }
+    }
+
+    &__profile {
+        img {
+            width: 4vw;
+            height: 8vh;
+            border-radius: 2rem;
+        }
+    }
+}
+
+.mainscreen {
+
+    background-color: #ded9f7;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    padding: 2rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 75vw;
+        background-color: azure;
+        border-radius: 0.5rem;
+
+        &__Assessment_Header1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: .5rem 1rem;
+        }
+    }
+
+    &__insidescreen {
+        display: flex;
+        padding: 1rem;
+
+        &__text {
+            padding: .5rem 1rem;
+
+            &__heading {
+                color: rgb(154, 98, 207);
+                font-size: 1.5rem;
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+
+            &__paragraph {
+                font-size: 1.3rem;
+
+                p {
+                    margin: 0;
+                    font-size: 0.875rem;
+                    text-align: justify;
+                }
+            }
+
+            &__buttons {
+                display: grid;
+                grid-template-columns: 120px 120px;
+                gap: 1.5rem;
+                padding: 2rem;
+                justify-content: center;
+
+                &__btn {
+                    background-color: #ded9f7;
+                    padding: 0.5rem;
+                    border-radius: 0.3rem;
+                    border-style: none;
+                    position: relative;
+
+                    img {
+                        height: 2rem;
+                        position: absolute;
+                        margin-top: -1.5rem;
+                        right: -7px;
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
+                        background-color: #d0c8f7;
+                    }
+
+                    &:disabled {
+                        color: black;
+                        background-color: #dad7e9;
+                    }
+                }
+            }
+        }
+
+
+
+        &__image {
+            img {
+                height: 23rem;
+                width: 28rem;
+            }
+        }
+
+    }
+}
+
+.Instructions {
+    &__AssessmentScreen {
+        padding: 1rem 0;
+        background-color: #f5f3fe;
+        height: 82vh;
+        // overflow-y: scroll;
+    }
+
+    &__Container {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: .5rem;
+        max-height: auto;
+        min-height: 70vh;
+        padding: .5rem;
+        box-shadow: 0px 1px 24px 2px #e9e6e6;
+
+        &__InstructionsBox {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            &__InstructionsTitle {
+                display: flex;
+                justify-content: space-between;
+                padding-top: .5rem;
+                text-align: center;
+                &__icon{
+                    cursor: pointer;
+                    img{
+                        height: 5vh;
+                        width: 2.8vw;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &__InstructionPoints {
+                // text-align: justify;
+                ol {
+                    // background-color: #f5f3fe;
+                    display: flex;
+                    flex-direction: column;
+                    gap: .25rem;
+                    li{
+                        padding: .1rem 0;
+                        background: none;
+
+                    }
+                    
+                }
+            }
+        }
+
+        &__StartButton {
+            display: flex;
+            justify-content: center;
+            padding: 0 0 1rem 0;
+
+            &_btn {
+                background-color: #5655bd;
+                padding: 0.5rem 2rem;
+                border-radius: 1rem;
+                color: white;
+                cursor: pointer;   
+                &:hover{
+                    transform: scale(1.05);
+                    background-color: #5856e3;
+                }             
+            }
+        }
+
+
+    }
+}

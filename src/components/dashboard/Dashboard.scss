@@ -1,0 +1,382 @@
+.Dashboard {
+    background-color: rgb(219, 219, 247);
+    width: 100%;
+    height: 100%;
+    padding: 18px 16px 8px 16px;
+    display: flex;
+    gap: 1rem;
+
+    &__leftmenu {
+        width: 20vw;
+        background-color: #fff;
+        height: calc(100vh - 26px);
+        border-radius: 14px;
+        position: relative;
+        padding: 20px;
+
+        &__Container {
+            &__top {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                &-logo {
+                    img {
+                        width: 12vw;
+                    }
+                }
+
+                &-profile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &-image {
+                        img {
+                            width: 4rem;
+                            margin: 4px;
+                            border-radius: 50%;
+                            height: 10vh;
+                        }
+                    }
+
+                    &-username {
+                        font-size: 1.65vw;
+                        font-weight: 600;
+                    }
+
+                    &-class {
+                        font-size: 1.2vw;
+                        font-weight: 500;
+                        color: #A5B4CB;
+                    }
+                }
+
+                &-dash {
+                    width: 110%;
+                    border-bottom: 2px solid #DFE5F1;
+                    margin: 8px;
+                }
+            }
+
+            &__mid {
+                height: 52vh;
+                max-height: 52vh;
+                overflow-y: hidden;
+                overflow-x: auto;
+
+                &::-webkit-scrollbar {
+                    width: 2px;
+                    height: 5px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #e8e6f1;
+                    border-radius: 2px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: #35008b;
+                    border-radius: 2px;
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #35008b;
+                }
+            }
+
+            &__bottom {
+                display: flex;
+                gap: .5vw;
+                align-items: center;
+                font-weight: 500;
+                padding-top: .5vw;
+                cursor: pointer;
+
+                img {
+                    width: 1.5vw;
+                    height: 3.5vh;
+                }
+            }
+
+
+
+        }
+    }
+
+    &__Content {
+        width: 80vw;
+        background-color: #fff;
+        border-radius: 14px;
+        position: relative;
+        padding: 8px 24px;
+        max-height: calc(100vh - 26px);
+        height: calc(100vh - 26px);
+
+        &__nodatafound {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 6vh;
+
+            button {
+                background-color: #603E9F;
+                padding: .75vw 2vw;
+                border: none;
+                color: #fff;
+                border-radius: .5vw;
+
+                &:hover {
+                    background-color: #6827e1;
+                }
+            }
+        }
+
+
+        // overflow-y: scroll;
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            article {
+                &:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+                    gap: .5vw;
+                    cursor: pointer;
+
+                    i {
+                        font-size: 2vw;
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+
+                &:nth-child(2) {
+                    font-size: 2vw;
+                    color: #5D33A2;
+                    font-weight: 600;
+                }
+
+                &:nth-child(3) {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        &__Academics {
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+
+            &__Breadcrum {
+                font-size: 1.1vw;
+                padding: 1.5vw 0 0 0;
+            }
+
+            &__Container {
+                display: flex;
+                // justify-content: center;
+                flex-direction: column;
+
+                &--levels {
+                    display: flex;
+                    justify-content: center;
+
+                    &-box {
+                        padding: 0.5vw .5vw 0 .5vw;
+                        border-radius: .5vw;
+                        background-color: #EBE6F3;
+                        font-size: 1.2vw;
+                        border: 1px solid black;
+
+                        &-heading {
+                            text-align: center;
+                            font-weight: 700;
+                            font-size: 1.5vw;
+                        }
+
+                        table {
+                            border-spacing: 12px;
+
+                            thead {
+                                tr {
+                                    th {
+                                        font-weight: 500;
+                                        text-align: center;
+                                        padding: 0.25vw .75vw;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    td {
+                                        text-align: center;
+                                        font-weight: 400;
+                                        padding: 0.15vw .75vw;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+                &--charts {
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: .75vw;
+
+                    &-bar {
+                        border: 1px solid black;
+                        padding: .5vw 1vw;
+                        border-radius: .75vw;
+
+                        div {
+                            text-align: center;
+                            font-size: 1.25vw;
+                            padding: .25vw;
+                        }
+                    }
+                }
+
+                &--specialskills {
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 1vw 0 0 0;
+
+                    &-pie {
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        border: 1px solid;
+                        gap: .5vw;
+                        width: 36%;
+                        align-items: center;
+                        padding: 0.25vw 0 0 0;
+                        border-radius: .5vw;
+
+                        &-levels {
+                            display: flex;
+                            gap: 1vw;
+                            border: 1px solid black;
+                            padding: 0.25vw .45vw;
+                            border-radius: .5vw;
+                            font-size: 14px;
+                            align-items: center;
+
+
+                            &-btn {
+                                cursor: pointer;
+
+                                &.active {
+                                    background-color: #5D33A2;
+                                    color: white;
+                                    padding: 0.25vw .75vw;
+                                    border-radius: .5vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+// /* Add this CSS to your stylesheet or component */
+
+// .Dashboard__leftmenu__Container__mid {
+//     position: relative;
+// }
+
+// .dropdown-container {
+//     position: relative;
+//     display: inline-block;
+
+// }
+
+// .dropdown-box {
+//     position: absolute;
+//     top: 0;
+//     left: 125px;
+//     background-color: #fff;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+//     padding: 10px;
+//     border: 1px solid;
+//     z-index: 999;
+//     width: 15vw;
+//     border-radius: 0.5vw;
+// }
+
+
+// /* Additional styling for better appearance (optional) */
+// .dropdown-box ul {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+
+//     i {
+//         position: absolute;
+//         left: -14px;
+//         top: -2px;
+//         font-size: 1.25rem;
+//     }
+// }
+
+// .dropdown-box li {
+//     padding: 5px 0;
+//     width: 100%;
+//     display: block;
+// }
+
+.dropdown-container {
+
+    cursor: pointer;
+
+    span {
+        img {
+            width: 2.5vw;
+            padding-right: 1vw;
+        }
+
+        font-weight: 500;
+    }
+
+    & .dropdown-box {
+        li {
+            span {
+                font-weight: 500;
+            }
+        }
+
+        ul {
+            padding-left: 1.2rem;
+
+            li {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                span {
+                    font-weight: 400;
+
+                    &:hover {
+                        color: #5D33A2;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,176 @@
+video::-webkit-media-controls-panel {
+    background-color: transparent !important;
+    box-shadow: none !important
+}
+
+.landing {
+    &__health {
+        list-style: none;
+
+        li {
+            margin: .5rem .75rem 1rem 0;
+            padding: 1rem .75rem;
+            background-color: white;
+            border-radius: .75rem;
+            box-shadow: 2px 6px 25px -17px #080F34;
+            font-size: 0.845rem;
+
+            a {
+                font-size: 0.845rem;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        &__container {
+            padding: 1rem 0.5rem 0.25rem 0.5rem;
+            background-color: #dbdbf7;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: 100vh;
+            overflow: hidden;
+
+            &__physicalhealth {
+                display: flex;
+                gap: 1vw;
+
+                &__sidebar {
+                    width: 25vw;
+                    background-color: white;
+                    border-radius: 1rem;
+
+                    ul {
+                        list-style: none;
+                        padding: 1vw;
+
+                        li {
+                            border-bottom: .1px solid rgb(144, 140, 140);
+
+                            a {
+                                padding: .5vw 0;
+                                cursor: pointer;
+                                width: 100%;
+                                display: block;
+                                text-decoration: none;
+                                color: #603E9F;
+                            }
+
+                            &:hover {
+                                background-color: #dbdbf7;
+                            }
+                            &.active{
+                                background-color: #dbdbf7;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                padding: 0.5rem 1rem;
+                border-radius: 1rem;
+                overflow-y: hidden;
+                height: 85.25vh;
+
+                &::-webkit-scrollbar {
+                    width: 6px;
+                    // margin: 1rem 0;
+                    border-radius: 5px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #e8e6f1;
+                    border-radius: 5px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: #35008b;
+                    border-radius: 5px;
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #35008b;
+                }
+
+                &__breadcrum {
+                    background-color: white;
+                    width: 100%;
+                    font-size: 1.1vw;
+                }
+
+                &__TopPart {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    &__backbtn {
+                        display: flex;
+                        align-items: center;
+                        gap: .5vw;
+                    }
+                }
+
+                &__buttons {
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    button {
+                        padding: .25vw .75vw;
+                        font-weight: 400;
+                        background: none;
+                        border-radius: .5rem;
+                        border: 1.5px solid black;
+
+                        &:hover {
+                            background-color: #5d33a2;
+                            color: white;
+                            border: none;
+                            transform: scale(1.05);
+                        }
+                        &.active{
+                            background-color: #5d33a2;
+                            color: white;
+                        }
+                    }
+                }
+
+                &__videocontainer {
+
+                    width: 80%;
+                    margin: 0 auto;
+                    height: 60vh;
+                    text-align: center;
+
+                    video {
+                        height: 90%;
+                        width: 75%;
+                        border-radius: .5rem;
+
+                        &::-webkit-media-controls-panel {
+                            // Your styling here
+                            background-image: linear-gradient(transparent, transparent) !important; //Transparent for your case
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.landing__lifeskills {
+  list-style: none;
+}
+.landing__lifeskills li {
+  margin: 0.5rem 0.75rem 1rem 0;
+  padding: 1rem 0.75rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 2px 6px 25px -17px #080F34;
+  font-size: 0.845rem;
+}
+.landing__lifeskills li a {
+  font-size: 0.845rem;
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.landing__lifeskills__container {
+  padding: 1rem 0.5rem 0.25rem 0.5rem;
+  background-color: #dbdbf7;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.landing__lifeskills__container__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  overflow-y: scroll;
+  height: 85.25vh;
+}
+.landing__lifeskills__container__content::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 5px;
+}
+.landing__lifeskills__container__content::-webkit-scrollbar-track {
+  background: #e8e6f1;
+  border-radius: 5px;
+}
+.landing__lifeskills__container__content::-webkit-scrollbar-thumb {
+  background: #5d33a2;
+  border-radius: 5px;
+}
+.landing__lifeskills__container__content::-webkit-scrollbar-thumb:hover {
+  background: #5d33a2;
+}
+.landing__lifeskills__container__content__TopPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing__lifeskills__container__content__TopPart a {
+  text-decoration: none;
+  color: black;
+}
+.landing__lifeskills__container__content__TopPart a:hover {
+  transform: scale(1.05);
+}
+.landing__lifeskills__container__content__TopPart__backbtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+.landing__lifeskills__container__content__videocontainer {
+  display: grid;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
+  row-gap: 2vw;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+.landing__lifeskills__container__content__videocontainer-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.landing__lifeskills__container__content__videocontainer-item div {
+  padding: 0.25vw 0;
+  font-weight: 500;
+  font-size: 1.3vw;
+}
+.landing__lifeskills__container__content__videocontainer-item video {
+  width: 90%;
+  height: 32.5vh;
+  border-radius: 1rem;
+}/*# sourceMappingURL=lifeskills.css.map */

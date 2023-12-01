@@ -1,0 +1,74 @@
+.speech-bot-container {
+  position: relative; /* Ensure the container is positioned */
+}
+
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99; /* Make sure the button is on top */
+  width: 5vw;
+  height: 12vh;
+}
+.listening-icon {
+  font-size: 40px;
+  color: #007bff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 8rem;
+  filter: drop-shadow(2px 4px 28px black);
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.start-listening-icon,
+.listening-indicator {
+  font-size: 40px;
+  color: #007bff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.listening-indicator {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+  i {
+    margin-right: 8px;
+  }
+}
+
+.overlay {
+  z-index: 1000;
+  position: absolute;
+  height: 17vh;
+  top: 0.5625rem;
+  background-color: #ffffff00;
+  width: 18vh;
+  left: 1rem;
+  cursor: pointer;
+}
+
+.voicebotframe {
+  margin-bottom: -1rem;
+  margin-right: -0.5875rem;
+  
+}
+
+.voicebotframeactive {
+  transform: scale(0.9);
+  margin-right: -0.8rem;
+  margin-bottom: -12px;
+}
+
+.botimage {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}

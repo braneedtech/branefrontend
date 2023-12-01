@@ -1,0 +1,143 @@
+video::-webkit-media-controls-panel {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.landing__health {
+  list-style: none;
+}
+.landing__health li {
+  margin: 0.5rem 0.75rem 1rem 0;
+  padding: 1rem 0.75rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 2px 6px 25px -17px #080F34;
+  font-size: 0.845rem;
+}
+.landing__health li a {
+  font-size: 0.845rem;
+  text-decoration: none;
+  color: black;
+}
+.landing__health__container {
+  padding: 1rem 0.5rem 0.25rem 0.5rem;
+  background-color: #dbdbf7;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  overflow: hidden;
+}
+.landing__health__container__physicalhealth {
+  display: flex;
+  gap: 1vw;
+}
+.landing__health__container__physicalhealth__sidebar {
+  width: 25vw;
+  background-color: white;
+  border-radius: 1rem;
+}
+.landing__health__container__physicalhealth__sidebar ul {
+  list-style: none;
+  padding: 1vw;
+}
+.landing__health__container__physicalhealth__sidebar ul li {
+  border-bottom: 0.1px solid rgb(144, 140, 140);
+}
+.landing__health__container__physicalhealth__sidebar ul li a {
+  padding: 0.5vw 0;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: #603E9F;
+}
+.landing__health__container__physicalhealth__sidebar ul li:hover {
+  background-color: #dbdbf7;
+}
+.landing__health__container__physicalhealth__sidebar ul li.active {
+  background-color: #dbdbf7;
+}
+.landing__health__container__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  overflow-y: hidden;
+  height: 85.25vh;
+}
+.landing__health__container__content::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 5px;
+}
+.landing__health__container__content::-webkit-scrollbar-track {
+  background: #e8e6f1;
+  border-radius: 5px;
+}
+.landing__health__container__content::-webkit-scrollbar-thumb {
+  background: #35008b;
+  border-radius: 5px;
+}
+.landing__health__container__content::-webkit-scrollbar-thumb:hover {
+  background: #35008b;
+}
+.landing__health__container__content__breadcrum {
+  background-color: white;
+  width: 100%;
+  font-size: 1.1vw;
+}
+.landing__health__container__content__TopPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing__health__container__content__TopPart a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.landing__health__container__content__TopPart a:hover {
+  transform: scale(1.05);
+}
+.landing__health__container__content__TopPart__backbtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+.landing__health__container__content__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.landing__health__container__content__buttons button {
+  padding: 0.25vw 0.75vw;
+  font-weight: 400;
+  background: none;
+  border-radius: 0.5rem;
+  border: 1.5px solid black;
+}
+.landing__health__container__content__buttons button:hover {
+  background-color: #5d33a2;
+  color: white;
+  border: none;
+  transform: scale(1.05);
+}
+.landing__health__container__content__buttons button.active {
+  background-color: #5d33a2;
+  color: white;
+}
+.landing__health__container__content__videocontainer {
+  width: 80%;
+  margin: 0 auto;
+  height: 60vh;
+  text-align: center;
+}
+.landing__health__container__content__videocontainer video {
+  height: 90%;
+  width: 75%;
+  border-radius: 0.5rem;
+}
+.landing__health__container__content__videocontainer video::-webkit-media-controls-panel {
+  background-image: linear-gradient(transparent, transparent) !important;
+}/*# sourceMappingURL=health.css.map */

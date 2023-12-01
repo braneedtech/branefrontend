@@ -1,0 +1,13 @@
+.custom-popup1{
+    position: fixed;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    z-index: 111;
+    background-color: white;
+    left: 87%;
+    width: 20rem;
+    filter: drop-shadow(2px 4px 6px rgb(105, 105, 105));
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
